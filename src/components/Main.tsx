@@ -1,6 +1,6 @@
 import './Main.css';
-// import Pokemon from './Pokemon';
 import Pokemon from './Pokemon';
+import Home from './Home';
 import { Switch, Route } from 'react-router-dom';
 
 const Main: React.FC = () => {
@@ -8,7 +8,7 @@ const Main: React.FC = () => {
     <main>
       <Switch>
         <Route exact path="/">
-          <Pokemon pokemon="Bulbasaur"/>
+          <Home/>
         </Route>
         <Route exact path="/Bulbasaur">
           <Pokemon pokemon="Bulbasaur" />

@@ -1,7 +1,5 @@
-html {
-  min-height: 100vh;
-  background: linear-gradient(to bottom, #FF3123 45%, #003AE4 55%);
-  background-repeat: no-repeat;
+* {
+  margin-top:0;
 }
 body {
   margin: 0;
@@ -10,4 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  background: linear-gradient(to bottom, #FF3123 45%, #003AE4 55%);
+  background-repeat: no-repeat;
 }

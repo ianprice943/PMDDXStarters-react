@@ -10,7 +10,7 @@ const Pokemon: React.FC<Props> = ({ pokemon }) => {
   const serviceRef = React.useRef(new PokemonService());
 
   return (
-    <div>
+    <div className="pokemon">
       <h2>{pokemon}</h2>
       <p>{serviceRef.current.getPokemon(pokemon).type.map(t => <span>{t}</span>)}</p>
       <p>{serviceRef.current.getPokemon(pokemon).ability.name}</p>
