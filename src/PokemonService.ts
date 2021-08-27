@@ -3,21 +3,21 @@ import movesJSON from './data/moves.json';
 import abilitiesJSON from './data/abilities.json';
 
 enum PokemonType {
-  Grass,
-  Fire,
-  Water,
-  Electric,
-  Normal,
-  Ground,
-  Fighting,
-  Poison,
-  Dark,
-  Psychic,
-  Rock,
-  Steel,
-  Dragon,
-  Ice,
-  Flying
+  Grass = "Grass",
+  Fire = "Fire",
+  Water = "Water",
+  Electric = "Electric",
+  Normal = "Normal",
+  Ground = "Ground",
+  Fighting = "Fightning",
+  Poison = "Poison",
+  Dark = "Dark",
+  Psychic = "Psychic",
+  Rock = "Rock",
+  Steel = "Steel",
+  Dragon = "Dragon",
+  Ice = "Ice",
+  Flying = "Flying"
 }
 
 interface PokemonAbility {
@@ -41,106 +41,50 @@ interface Pokemon {
   moves: PokemonMove[];
 }
 
-enum PokemonList {
-  Bulbasaur,
-  Charmander,
-  Squirtle,
-  Pikachu,
-  Meowth,
-  Psyduck,
-  Machop,
-  Cubone,
-  Eevee,
-  Chikorita,
-  Cyndaquil,
-  Totodile,
-  Treecko,
-  Torchic,
-  Mudkip,
-  Skitty
+interface PokemonSkeleton {
+  type: PokemonType[];
+  ability: string[];
+  moves: string[];
 }
-
-enum AbilityList {
-  Adaptability,
-  Blaze,
-  CloudNine,
-  CuteCharm,
-  Guts,
-  LightningRod,
-  Overgrow,
-  PickUp,
-  Static,
-  Torrent
-}
-
-enum MoveList {
-  Absorb,
-  AncientPower,
-  Bite,
-  BoneClub,
-  BrickBreak,
-  BrutalSwing,
-  BulletPunch,
-  ChargeBeam,
-  Confusion,
-  DoubleKick,
-  DragonBreath,
-  DragonRage,
-  EchoedVoice,
-  ElectroBall,
-  Ember,
-  Facade,
-  FakeOut,
-  FlameBurst,
-  FoulPlay,
-  GrassKnot,
-  Headbutt,
-  IceFang,
-  IronTail,
-  KarateChop,
-  LowKick,
-  MetalClaw,
-  MudBomb,
-  MudSlap,
-  Peck,
-  RazorLeaf,
-  QuickAttack,
-  Scratch,
-  SeedBomb,
-  Sludge,
-  Strength,
-  Swift,
-  Tackle,
-  VineWhip,
-  WaterGun,
-  ZenHeadbutt
-}
-
-type PokemonName = keyof typeof PokemonList;
-type PokemonTypeName = keyof typeof PokemonType;
-type AbilityName = keyof typeof AbilityList;
-type PokemonMoveName = keyof typeof MoveList;
 
 class PokemonService {
 
-  private isValidPokemon(pokemon: string): pokemon is PokemonName {
-    return pokemon in PokemonList;
+  private isValidPokemon(pokemon: string): boolean {
+    if(pokemon in pokemonJSON.pokemon) {
+      return true;
+    }
+
+    throw new Error(`${pokemon} is not a valid pokemon`);
   }
 
-  private isValidType(type: string): type is PokemonTypeName {
-    return type in PokemonType;
+  private getAbilityDescription(abilityName: string): string {
+    if(abilityName in abilitiesJSON.abilities) {
+      const abilities = abilitiesJSON.abilities as Record<string, string>
+      const abilityDescription = abilities[abilityName];
+      return abilityDescription;
+    }
+
+    throw new Error(`${abilityName} is not a valid ability`);
   }
 
-  private isAbilityName(ability: string): ability is AbilityName {
-    return ability in AbilityList;
+  private getMoveSet(moves: string[]): PokemonMove[] {
+    const finalMovesArr: PokemonMove[] = [];
+    const fullMoveSet = movesJSON.moves as Record <string, Object>
+    moves.forEach((move) => {
+      if(move in fullMoveSet) {
+        const curMove = fullMoveSet[move] as PokemonMove;
+        finalMovesArr.push(curMove);
+      }
+    });
+    if(finalMovesArr.length === 4) {
+      return finalMovesArr;
+    }
+
+    throw new Error(`${moves} is not a valid move set`);
   }
 
-  private isMoveName(move: string): move is PokemonMoveName {
-    return move in MoveList;
-  }
-
-  getPokemon(pokeName: string): Pokemon | undefined {
-    let name: PokemonName;
+  public getPokemon(pokeName: string): Pokemon | undefined {
+    let name: string;
     let pokemon: Pokemon = {
       name: '',
       type: [PokemonType.Grass],
@@ -152,34 +96,20 @@ class PokemonService {
     };
     if(this.isValidPokemon(pokeName)){
       name = pokeName;
-      pokemon.name = name;
+      pokemon.name = pokeName;
 
-      const types: PokemonType[] = [];
-      const curPokemon = pokemonJSON.pokemon[name];
-      curPokemon.type.forEach((type: string) => {
-        if(this.isValidType(type)) {
-          types.push(PokemonType[type]);
-        }
-      })
-      pokemon.type = types;
+      const pokemonObj = pokemonJSON.pokemon as Record<string, Object>;
+      const curPokemon:PokemonSkeleton = pokemonObj[name] as PokemonSkeleton;
+      pokemon.type = curPokemon.type;
 
-      let abilityDescription = "";
-      if(this.isAbilityName(curPokemon.ability[0])) {
-        let abilityName: AbilityName = curPokemon.ability[0];
-        abilityDescription = abilitiesJSON.abilities[abilityName];
-      }
+      let abilityDescription = this.getAbilityDescription(curPokemon.ability[0]);
       pokemon.ability = { 
         name: curPokemon.ability[0].replace(/([A-Z])/g, ' $1').trim(), 
         description: abilityDescription
       }
 
-      const movesArr = [];
-      curPokemon.moves.forEach((move: string) => {
-        if(this.isMoveName(move)) {
-          let curMove = move;
-          movesArr.push(movesJSON.moves[curMove]);
-        }
-      });
+      const movesArr: PokemonMove[] = this.getMoveSet(curPokemon.moves);
+      pokemon.moves = movesArr;
 
       return pokemon;
     }

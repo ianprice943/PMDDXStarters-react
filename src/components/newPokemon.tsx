@@ -1,7 +1,14 @@
 import React from "react";
-import pokemonJSON from '../data/pokemon.json';
+import PokemonService from "../PokemonService";
 
-const Pokemon: React.FC = () => {
+interface Props {
+  onChange?: (pokemon: string) => void
+}
+
+const Pokemon: React.FC<Props> = ({ onChange }) => {
+  const [pokemon, setPokemon] = React.useState("");
+  
+
   return (
     <div>
       <h2></h2>
@@ -11,3 +18,5 @@ const Pokemon: React.FC = () => {
     </div>
   )
 }
+
+export default Pokemon;
