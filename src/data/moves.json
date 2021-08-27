@@ -1,0 +1,324 @@
+{
+    "moves": {
+        "Absorb": {
+            "category": "Special",
+            "description": "It damages an enemy. It also restores your HP. The greater the damage it causes, the more HP it restores.",
+            "name": "Absorb",
+            "powerpoints": "18",
+            "range": "Front (one tile)",
+            "type": "Grass"
+        },
+        "AncientPower": {
+            "category": "Special",
+            "description": "It damages an enemy. It could also boost your Attack, Defense, Sp. Atk, Sp. Def, and Travel Speed. The stats return to normal when you go to the next floor or step on a Wonder Tile.",
+            "name": "Ancient Power",
+            "powerpoints": "15",
+            "range": "Front (one tile)",
+            "type": "Rock"
+        },
+        "Bite": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also make the enemy Flinch.",
+            "name": "Bite",
+            "powerpoints": "18",
+            "range": "Front (one tile)",
+            "type": "Dark"
+        },
+        "BoneClub": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also make the enemy Flinch.",
+            "name": "Bone Club",
+            "powerpoints": "17",
+            "range": "Front (one tile)",
+            "type": "Ground"
+        },
+        "BrickBreak": {
+            "category": "Physical",
+            "description": "It damages an enemy. It also shatters the enemy's Reflect, Light Screen, and Aurora Veil conditions.",
+            "name": "Brick Break",
+            "powerpoints": "18",
+            "range": "Front (one tile)",
+            "type": "Fighting"
+        },
+        "BrutalSwing": {
+            "category": "Physical",
+            "description": "It damages nearby enemies.",
+            "name": "Brutal Swing",
+            "powerpoints": "17",
+            "range": "Nearby Pokemon (2 tiles away in all directions)",
+            "type": "Dark"
+        },
+        "BulletPunch": {
+            "category": "Physical",
+            "description": "It damages an enemy. It reaches up to 2 tiles away.",
+            "name": "Bullet Punch",
+            "powerpoints": "16",
+            "range": "2 tiles away",
+            "type": "Steel"
+        },
+        "ChargeBeam": {
+            "category": "Special",
+            "description": "It damages an enemy. It could also boost your Sp. Atk. The stat returns to normal when you go to the next floor or step on a Wonder Tile",
+            "name": "Charge Beam",
+            "powerpoints": "13",
+            "range": "Front (one tile)",
+            "type": "Electric"
+        },
+        "Confusion": {
+            "category": "Special",
+            "description": "It damages an enemy. It could also make the enemy Confused.",
+            "name": "Confusion",
+            "powerpoints": "18",
+            "range": "Front (one tile)",
+            "type": "Psychic"
+        },
+        "DoubleKick": {
+            "category": "Physical",
+            "description": "It damages an enemy 2 times in a row.",
+            "name": "Double Kick",
+            "powerpoints": "20",
+            "range": "Front (one tile)",
+            "type": "Fighting"
+        },
+        "DragonBreath": {
+            "category": "Special",
+            "description": "It damages a Pokemon, even one far away. It could also cause Paralysis.",
+            "name": "Dragon Breath",
+            "powerpoints": "12",
+            "range": "4 tiles away",
+            "type": "Dragon"
+        },
+        "DragonRage": {
+            "category": "Special",
+            "description": "It inflicts a set amount of damage on an enemy. The greater your level, the further this move can reach.",
+            "name": "Dragon Rage",
+            "powerpoints": "13",
+            "range": "Varies",
+            "type": "Dragon"
+        },
+        "EchoedVoice": {
+            "category": "Special",
+            "description": "It damages enemies. It causes more damage if it's used repeatedly. The power also goes up when you use it after a teammate uses it.",
+            "name": "Echoed Voice",
+            "powerpoints": "15",
+            "range": "Nearby Pokemon (One tile in all directions)",
+            "type": "Normal"
+        },
+        "ElectroBall": {
+            "category": "Special",
+            "description": "It damages an enemy. The higher your Speed compared to that of the enemy, the greater the damage caused.",
+            "name": "Electro Ball",
+            "powerpoints": "17",
+            "range": "Front (one tile)",
+            "type": "Electric"
+        },
+        "Ember": {
+            "category": "Special",
+            "description": "It damages an enemy. It reaches up to 2 tiles away. It could also leave the enemy with a Burn",
+            "name": "Ember",
+            "powerpoints": "15",
+            "range": "2 tiles away",
+            "type": "Fire"
+        },
+        "Facade": {
+            "category": "Physical",
+            "description": "It damages an enemy. The damage it causes goes up if you have a bad status. It also prevents your Attack from being lowered when you use this move while you have a Burn.",
+            "name": "Facade",
+            "powerpoints": "17",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "FakeOut": {
+            "category": "Physical",
+            "description": "It damages an enemy. It reaches up to 2 tiles away. It could also make the enemy Flinch.",
+            "name": "Fake Out",
+            "powerpoints": "13",
+            "range": "2 tiles away",
+            "type": "Normal"
+        },
+        "FlameBurst": {
+            "category": "Special",
+            "description": "It even damages a faraway Pokemon. It also damages Pokemon around the target.",
+            "name": "Flame Burst",
+            "powerpoints": "12",
+            "range": "4 tiles away",
+            "type": "Fire"
+        },
+        "FoulPlay": {
+            "category": "Physical",
+            "description": "It damages an enemy. But the damage is determined by the target's Attack stat instead of the user's Attack stat.",
+            "name": "Foul Play",
+            "powerpoints": "17",
+            "range": "Front (one tile)",
+            "type": "Dark"
+        },
+        "GrassKnot": {
+            "category": "Special",
+            "description": "It damages an enemy. The heavier the enemy, the greater the damage caused by the move.",
+            "name": "Grass Knot",
+            "powerpoints": "20",
+            "range": "Front (one tile)",
+            "type": "Grass"
+        },
+        "Headbutt": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also make the enemy Flinch",
+            "name": "Headbutt",
+            "powerpoints": "15",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "IceFang": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could make the enemy Frozen or cause it to Flinch.",
+            "name": "Ice Fang",
+            "powerpoints": "15",
+            "range": "Front (one tile)",
+            "type": "Ice"
+        },
+        "IronTail": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also lower the enemy's Defense.",
+            "name": "Iron Tail",
+            "powerpoints": "16",
+            "range": "Front (one tile)",
+            "type": "Steel"
+        },
+        "KarateChop": {
+            "category": "Physical",
+            "description": "It damages an enemy. It has a high critical-hit rate.",
+            "name": "Karate Chop",
+            "powerpoints": "20",
+            "range": "Front (one tile)",
+            "type": "Fighting"
+        },
+        "LowKick": {
+            "category": "Physical",
+            "description": "It damages an enemy. The heavier the enemy, the greater the damage.",
+            "name": "Low Kick",
+            "powerpoints": "13",
+            "range": "Front (one tile)",
+            "type": "Fighting"
+        },
+        "MetalClaw": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also boost your Attack. The stat returns to normal when you go to the next floor or step on a Wonder Tile.",
+            "name": "Metal Claw",
+            "powerpoints": "25",
+            "range": "Front (one tile)",
+            "type": "Steel"
+        },
+        "MudBomb": {
+            "category": "Special",
+            "description": "It damages an enemy. It could also lower the enemy's accuracy.",
+            "name": "Mud Bomb",
+            "powerpoints": "13",
+            "range": "Front (one tile)",
+            "type": "Ground"
+        },
+        "MudSlap": {
+            "category": "Special",
+            "description": "It damages an enemy. It also lowers the enemy's accuracy.",
+            "name": "Mud Slap",
+            "powerpoints": "13",
+            "range": "Front (one tile)",
+            "type": "Ground"
+        },
+        "Peck": {
+            "category": "Physical",
+            "description": "It damages an enemy.",
+            "name": "Peck",
+            "powerpoints": "25",
+            "range": "Front (one tile)",
+            "type": "Flying"
+        },
+        "RazorLeaf": {
+            "category": "Physical",
+            "description": "It damages a pokemon, even one far away. It has a high critical-hit rate.",
+            "name": "Razor Leaf",
+            "powerpoints": "15",
+            "range": "4 tiles away",
+            "type": "Grass"
+        },
+        "QuickAttack": {
+            "category": "Physical",
+            "description": "It damages an enemy. It reaches up to 2 tiles away.",
+            "name": "Quick Attack",
+            "powerpoints": "15",
+            "range": "2 tiles away",
+            "type": "Normal"
+        },
+        "Scratch": {
+            "category": "Physical",
+            "description": "It damages an enemy.",
+            "name": "Scratch",
+            "powerpoints": "25",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "SeedBomb": {
+            "category": "Physical",
+            "description": "It damages an enemy.",
+            "name": "Seed Bomb",
+            "powerpoints": "16",
+            "range": "Front (one tile)",
+            "type": "Grass"
+        },
+        "Sludge": {
+            "category": "Special",
+            "description": "It damages an enemy. It could also make the enemy Poisoned.",
+            "name": "Sludge",
+            "powerpoints": "17",
+            "range": "Front (one tile)",
+            "type": "Poison"
+        },
+        "Strength": {
+            "category": "Physical",
+            "description": "It damages an enemy.",
+            "name": "Strength",
+            "powerpoints": "15",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "Swift": {
+            "category": "Special",
+            "description": "It damages an enemy. It never misses.",
+            "name": "Swift",
+            "powerpoints": "13",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "Tackle": {
+            "category": "Physical",
+            "description": "It damages an enemy.",
+            "name": "Tackle",
+            "powerpoints": "25",
+            "range": "Front (one tile)",
+            "type": "Normal"
+        },
+        "VineWhip": {
+            "category": "Physical",
+            "description": "It damages an enemy. It reaches up to 2 tiles away.",
+            "name": "Vine Whip",
+            "powerpoints": "17",
+            "range": "2 tiles away",
+            "type": "Grass"
+        },
+        "WaterGun": {
+            "category": "Special",
+            "description": "It damages an enemy. It reaches up to 2 tiles away.",
+            "name": "Water Gun",
+            "powerpoints": "16",
+            "range": "2 tiles away",
+            "type": "Water"
+        },
+        "ZenHeadbutt": {
+            "category": "Physical",
+            "description": "It damages an enemy. It could also cause the enemy to Flinch.",
+            "name": "Zen Headbutt",
+            "powerpoints": "15",
+            "range": "Front (one tile)",
+            "type": "Psychic"
+        }
+    }
+}

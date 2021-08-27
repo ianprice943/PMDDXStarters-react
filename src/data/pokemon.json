@@ -1,0 +1,164 @@
+{
+    "pokemon": {
+        "Bulbasaur": {
+            "type": ["Grass", "Poison"],
+            "ability": ["Overgrow"],
+            "moves": [
+                "VineWhip",
+                "Sludge",
+                "Tackle",
+                "SeedBomb"
+            ]
+        },
+        "Charmander": {
+            "type": ["Fire"],
+            "ability": ["Blaze"],
+            "moves": [
+                "Scratch",
+                "FlameBurst",
+                "Bite",
+                "DragonRage"
+            ]
+        },
+        "Squirtle": {
+            "type": ["Water"],
+            "ability": ["Torrent"],
+            "moves": [
+                "BrickBreak",
+                "WaterGun",
+                "Tackle",
+                "Bite"
+            ]
+        },
+        "Pikachu": {
+            "type": ["Electric"],
+            "ability": ["Static"],
+            "moves": [
+                "FakeOut",
+                "ElectroBall",
+                "GrassKnot",
+                "IronTail"
+            ]
+        },
+        "Meowth": {
+            "type": ["Normal"],
+            "ability": ["PickUp"],
+            "moves": [
+                "Scratch",
+                "FakeOut",
+                "Bite",
+                "FoulPlay"
+            ]
+        },
+        "Psyduck": {
+            "type": ["Water"],
+            "ability": ["CloudNine"],
+            "moves": [
+                "Scratch",
+                "WaterGun",
+                "Confusion",
+                "ZenHeadbutt"
+            ]
+        },
+        "Machop": {
+            "type": ["Fighting"],
+            "ability": ["Guts"],
+            "moves": [
+                "BulletPunch",
+                "BrickBreak",
+                "KarateChop",
+                "Strength"
+            ]
+        },
+        "Cubone": {
+            "type": ["Ground"],
+            "ability": ["LightningRod"],
+            "moves": [
+                "Headbutt",
+                "BoneClub",
+                "BrutalSwing",
+                "BrickBreak"
+            ]
+        },
+        "Eevee": {
+            "type": ["Normal"],
+            "ability": ["Adaptability"],
+            "moves": [
+                "Bite",
+                "Tackle",
+                "Swift",
+                "QuickAttack"
+            ]
+        },
+        "Chikorita": {
+            "type": ["Grass"],
+            "ability": ["Overgrow"],
+            "moves": [
+                "AncientPower",
+                "RazorLeaf",
+                "Tackle",
+                "GrassKnot"
+            ]
+        },
+        "Cyndaquil": {
+            "type": ["Fire"],
+            "ability": ["Blaze"],
+            "moves": [
+                "QuickAttack",
+                "Ember",
+                "DoubleKick",
+                "Facade"
+            ]
+        },
+        "Totodile": {
+            "type": ["Water"],
+            "ability": ["Torrent"],
+            "moves": [
+                "Metal Claw",
+                "WaterGun",
+                "IceFang",
+                "Scratch"
+            ]
+        },
+        "Treecko": {
+            "type": ["Grass"],
+            "ability": ["Overgrow"],
+            "moves": [
+                "QuickAttack",
+                "Absorb",
+                "DragonBreath",
+                "IronTail"
+            ]
+        },
+        "Torchic": {
+            "type": ["Fire"],
+            "ability": ["Blaze"],
+            "moves": [
+                "QuickAttack",
+                "Ember",
+                "LowKick",
+                "Peck"
+            ]
+        },
+        "Mudkip": {
+            "type": ["Water"],
+            "ability": ["Torrent"],
+            "moves": [
+                "MudBomb",
+                "WaterGun",
+                "Tackle",
+                "MudSlap"
+            ]
+        },
+        "Skitty": {
+            "type": ["Normal"],
+            "ability": ["CuteCharm"],
+            "moves": [
+                "FakeOut",
+                "EchoedVoice",
+                "ChargeBeam",
+                "GrassKnot"
+            ]
+        }
+    }
+}

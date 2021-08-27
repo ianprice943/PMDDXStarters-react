@@ -1,0 +1,14 @@
+{
+    "abilities": {
+        "Adaptability": "This Ability increases the power of moves that are the same type as the Pokemon.",
+        "Blaze": "When the Pokemon's HP is low, the power of Fire-type moves goes up.",
+        "CloudNine": "This Ability causes the floor to have Ineffective Weather, removing the effects of weather.",
+        "CuteCharm": "When the Pokemon is hit with a contact move, like Tackle or Scratch, the attacker sometimes gets Infatuated.",
+        "Guts": "When the Pokemon is affected by a bad status condition, like poison or a burn, the power of its physical moves goes up..",
+        "LightningRod": "The Electric-type moves of enemies in the same room are drawn to the Pokemon and absorbed. When the Pokemon absorbs Electric-type moves, its Sp. Atk goes up.",
+        "Overgrow": "When the Pokemon's HP is low, the power of Grass-type moves goes up.",
+        "PickUp": "When the Pokemon goes to a different floor, it may pick up an item. However, there will be places where there is nothing for the pokemon to pick up.",
+        "Static": "When the Pokemon is hit with a contact move, like Tackle or Scratch, the attacker is sometimes afflicted with Paralysis.",
+        "Torrent": "When the Pokemon's HP is low, the power of Water-type moves goes up."
+    }
+}
