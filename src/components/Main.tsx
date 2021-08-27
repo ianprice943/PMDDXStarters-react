@@ -1,5 +1,6 @@
 import './Main.css';
-import Pokemon from './Pokemon';
+// import Pokemon from './Pokemon';
+import Pokemon from './newPokemon';
 import { Switch, Route } from 'react-router-dom';
 
 const Main: React.FC = () => {

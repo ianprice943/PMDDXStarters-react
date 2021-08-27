@@ -2,19 +2,19 @@ import React from "react";
 import PokemonService from "../PokemonService";
 
 interface Props {
-  onChange?: (pokemon: string) => void
+  pokemon: string
 }
 
-const Pokemon: React.FC<Props> = ({ onChange }) => {
-  const [pokemon, setPokemon] = React.useState("");
-  
+const Pokemon: React.FC<Props> = ({ pokemon }) => {
+  // const [pokemonObj, setPokemonObj] = React.useState("");
+  const serviceRef = React.useRef(new PokemonService());
 
   return (
     <div>
-      <h2></h2>
-      <p></p>
-      <p></p>
-      <p></p>
+      <h2>{pokemon}</h2>
+      <p>{serviceRef.current.getPokemon(pokemon).type.map(t => <span>{t}</span>)}</p>
+      <p>{serviceRef.current.getPokemon(pokemon).ability.name}</p>
+      <p>{serviceRef.current.getPokemon(pokemon).moves.map(move => <span>{move.name}</span>)}</p>
     </div>
   )
 }

@@ -48,6 +48,15 @@ interface PokemonSkeleton {
 }
 
 class PokemonService {
+  private pokemon: Pokemon[];
+
+  constructor() {
+    this.pokemon = [];
+    const pokemonObj = pokemonJSON.pokemon as Record<string, Object>;
+    for(let i = 0; i < pokemonObj.length; i++) {
+      this.pokemon.push(this.getPokemon(pokemonObj[i] as string));
+    }
+  }
 
   private isValidPokemon(pokemon: string): boolean {
     if(pokemon in pokemonJSON.pokemon) {
@@ -83,7 +92,7 @@ class PokemonService {
     throw new Error(`${moves} is not a valid move set`);
   }
 
-  public getPokemon(pokeName: string): Pokemon | undefined {
+  public getPokemon(pokeName: string): Pokemon {
     let name: string;
     let pokemon: Pokemon = {
       name: '',
@@ -114,7 +123,7 @@ class PokemonService {
       return pokemon;
     }
 
-    return undefined;
+    throw new Error ("Error fetching pokemon from json file");
   }
 
 }
