@@ -13,10 +13,10 @@ const Moves: React.FC<MoveProps> = (props) => {
                 <div key={index} className={`${getClassFromType(move.type)} box-shadow`}>
                     <div className="move-title">{move.name}</div>
                     <div>{move.description}</div>
-                    <div><b>Type:</b>{move.type}</div>
-                    <div><b>Powerpoints:</b>{move.powerpoints}</div>
-                    <div><b>Category:</b>{move.category}</div>
-                    <div><b>Range:</b>{move.range}</div>
+                    <div><b>Type:</b> {move.type}</div>
+                    <div><b>Powerpoints:</b> {move.powerpoints}</div>
+                    <div><b>Category:</b> {move.category}</div>
+                    <div><b>Range:</b> {move.range}</div>
                 </div>
             ) }
         </div>
