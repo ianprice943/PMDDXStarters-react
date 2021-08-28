@@ -3,5 +3,7 @@
   color: #000;
   position: relative;
   min-height: 100vh;
+  background: linear-gradient(to bottom, #FF3123 45%, #003AE4 55%);
+  background-repeat: no-repeat;
 }
 

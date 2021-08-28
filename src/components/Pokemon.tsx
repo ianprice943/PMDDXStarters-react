@@ -1,13 +1,14 @@
 import React from "react";
 import PokemonService from "../PokemonService";
-import Picture, { PictureProps } from "./Picture";
 import './Pokemon.css';
+import Picture from "./Picture";
+import Ability from "./Ability";
+import Moves from "./Moves";
+import { AbilityProps, MoveProps, PictureProps } from "PokemonTypes";
 
 interface Props {
   pokemon: string
 }
-
-
 
 const Pokemon: React.FC<Props> = ({ pokemon }) => {
   // const [pokemonObj, setPokemonObj] = React.useState("");
@@ -16,14 +17,21 @@ const Pokemon: React.FC<Props> = ({ pokemon }) => {
   const pictureProps: PictureProps = {
     name: curPokemon.name,
     types: curPokemon.type as string[]
+  };
+  const abilityProps: AbilityProps = {
+    name: curPokemon.ability.name,
+    description: curPokemon.ability.description
+  };
+  const moveProps: MoveProps = {
+    moves: curPokemon.moves
   }
 
   return (
     <div id="pokemon">
       <h2>{pokemon}</h2>
       <Picture {...pictureProps} />
-      <p>{serviceRef.current.getPokemon(pokemon).ability.name}</p>
-      <p>{serviceRef.current.getPokemon(pokemon).moves.map(move => <span>{move.name}</span>)}</p>
+      <Ability {...abilityProps} />
+      <Moves {...moveProps} />
     </div>
   )
 }

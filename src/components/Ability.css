@@ -1,0 +1,15 @@
+#ability h3 {
+    margin-top: 1em;
+}
+#ability-box {
+    margin: 1em 0;
+    padding: .5em;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 4px 4px;
+    background: #fff;
+}
+.ability-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}

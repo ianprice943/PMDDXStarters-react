@@ -1,9 +1,5 @@
+import { PictureProps } from 'PokemonTypes';
 import './Picture.css';
-
-export interface PictureProps {
-    name: string,
-    types: string[]
-}
 
 const getPokemonURL = (pokemonName: string): string => {
     return process.env.PUBLIC_URL + `/assets/${pokemonName}.png`;
