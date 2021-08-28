@@ -1,0 +1,36 @@
+#picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+figure {
+    display: flex;
+    margin: 0 .5em 0 0;
+}
+figure > img {
+    max-width: 100%;
+    height: auto;
+}
+.pokemon-picture {
+    margin: auto 0;
+}
+.type-picture-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.type-picture-row {
+    display: flex;
+    flex-direction: row;
+}
+.type-picture-row > figure > img {
+    width: 48px;
+}
+@media only screen and (max-width: 359px){
+    .type-picture-row {
+        flex-direction: column;
+    }
+    .type-picture-row > figure {
+        margin: 0 0 .5em;
+    }
+}
