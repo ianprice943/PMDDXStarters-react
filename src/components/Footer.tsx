@@ -6,7 +6,8 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <span>{creator} </span>
-      <span>{disclaimer}</span>
+      <span>{disclaimer} </span>
+      <a id="vue-anchor" href="https://pmdrtdx-vuejs.herokuapp.com/">Vue.js Version</a>
     </footer>
   )
 }

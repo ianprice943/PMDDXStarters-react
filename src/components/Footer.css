@@ -9,3 +9,10 @@ footer {
   bottom: 0;
   color: #FFF;
 }
+#vue-anchor {
+  color: #FFF;
+  text-decoration: underline;
+}
+#vue-anchor:visited {
+  color: #FFF;
+}
