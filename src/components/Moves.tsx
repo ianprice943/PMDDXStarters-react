@@ -9,6 +9,9 @@ const getClassFromType = (type: string): string => {
 const Moves: React.FC<MoveProps> = (props) => {
     return (
         <div id="moves">
+            <h3>
+                Moves
+            </h3>
             { props.moves.map((move: PokemonMove, index: number) =>
                 <div key={index} className={`${getClassFromType(move.type)} box-shadow`}>
                     <div className="move-title">{move.name}</div>

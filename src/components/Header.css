@@ -39,3 +39,53 @@ a:hover {
 a:visited {
   color: #000;
 }
+
+.desktop-hide {
+  display: none;
+}
+
+@media only screen and (max-width: 1119px) {
+  nav > ul {
+    max-width: 720px;
+  }
+  nav > ul > li {
+    min-width: 178px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .desktop-hide {
+    display: block;
+  }
+  nav {
+    position: relative;
+  }
+  #left-arrow,
+  #right-arrow {
+    position: absolute;
+    z-index: 20;
+    left: 1%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    line-height: 66%;
+    margin: 0;
+    padding: 0 2% 1.5vh 4%;
+  }
+  #right-arrow {
+    left: unset;
+    right: 1%;
+    padding: 0 4% 1.5vh 2%;
+  }
+  nav > ul {
+    flex-flow: row nowrap;
+    max-width: 80%;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  nav > ul > li {
+    min-width: unset;
+    padding: 0 1vw 1vh;
+  }
+}
