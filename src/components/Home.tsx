@@ -4,7 +4,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <figure>
-        <img src={process.env.PUBLIC_URL + "/assets/PMDRTDXLogo.png"} alt="Pokemon Mystery Dungeon Rescue Team DX Logo" width="650" height="372" />
+        <img src={process.env.PUBLIC_URL + "/assets/PMDRTDXLogo.png"} alt="Pokemon Mystery Dungeon Rescue Team DX Logo" width="650" height="372" loading="lazy" />
       </figure>
       <h2>Welcome to the PMDRTDX Starters App</h2>
       <p>
