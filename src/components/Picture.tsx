@@ -14,14 +14,14 @@ const Picture: React.FC<PictureProps> = (props) => {
         <div id="picture">
             <div className="pokemon-picture">
                 <figure>
-                    <img src={getPokemonURL(props.name)} alt={props.name} aria-label={`a picture of ${props.name}`} loading="lazy" />
+                    <img src={getPokemonURL(props.name)} alt={props.name} aria-label={`a picture of ${props.name}`} />
                 </figure>
             </div>
             <div className="type-picture-col">
                 <div className="type-picture-row">
                    { props.types.map((type: string, index: number) => 
                    <figure key={index}>
-                       <img src={getTypeURL(type)} alt={type} aria-label={`a picture that says ${type}`} loading="lazy" />
+                       <img src={getTypeURL(type)} alt={type} aria-label={`a picture that says ${type}`} />
                    </figure>
                    ) } 
                 </div>
